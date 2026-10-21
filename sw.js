@@ -1,10 +1,10 @@
 /* Change VERSION whenever any precached file changes. Never touches user data. */
-const VERSION = 'v3.0.1';
+const VERSION = 'v3.0.3';
 const PREFIX = 'life-restart-shell-' + encodeURIComponent(self.registration.scope) + '-';
 const CACHE = PREFIX + VERSION;
 const FILES = ['index.html','style.css','app.js','core.js','store.js','records.js',
-  'backup.js','offline.js','manifest.webmanifest','icons/apple-touch-icon.png',
-  'icons/icon-192.png','icons/icon-512.png'];
+  'backup.js','offline.js','manifest.webmanifest','icons/apple-touch-icon-v3.0.2.png',
+  'icons/icon-192-v3.0.2.png','icons/icon-512-v3.0.2.png','icons/favicon-32-v3.0.2.png','icons/favicon-16-v3.0.2.png'];
 const urls = FILES.map(file => new URL(file, self.registration.scope).href);
 self.addEventListener('install', event => {
   event.waitUntil((async () => {
